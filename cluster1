@@ -14,8 +14,8 @@ EOF
      sudo sysctl --system
      lsmod | grep br_netfilter
      lsmod | grep overlay
-    curl -fsSL https://get.docker.com -o get-docker.sh
-     sh get-docker.sh
+    
+     
      vi /etc/containerd/config.toml
      systemctl restart containerd
      systemctl status containerd
