@@ -15,7 +15,7 @@ EOF
      lsmod | grep br_netfilter
      lsmod | grep overlay
 
-     sed '15s/"cri"/"containerd"/g' /etc/containerd/config.toml
+     vi /etc/containerd/config.toml
      systemctl restart containerd
      systemctl status containerd
      sudo apt-get update
